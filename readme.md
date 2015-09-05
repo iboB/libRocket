@@ -22,6 +22,7 @@ this, you don't have to learn a whole new proprietary technology like other libr
 
 - Has Visual Studio 2013 project files
 - Suitable to use with [this GitHub fork of FreeType](https://github.com/iboB/freetype)
+- Has a simplified CMakeLists.txt
 
 ## Extensible
 - Abstracted interfaces for plugging in to any game engine.
