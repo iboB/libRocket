@@ -70,8 +70,13 @@ if(APPLE)
 endif(APPLE)
 
 if(NOT BUILD_SHARED_LIBS)
-	add_definitions(-DROCKET_STATIC_LIB)
+    set(LIBROCKET_DEFINITIONS
+        "-DROCKET_STATIC_LIB"
+        CACHE STRING "libRocket definitions"
+    )
 endif()
+
+add_definitions(${LIBROCKET_DEFINITIONS})
 
 #on windows, check for VC10 and fix the multiple compile target issue.
 IF(WIN32)
